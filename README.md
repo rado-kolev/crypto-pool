@@ -12,7 +12,7 @@ A website for crypto coins information, that uses [CoinGecko API](https://www.co
 
 ## Screenshot
 
-![Website screenshots](./demo/screenshot-cryptopool.png)
+![Website screenshots](./demo/screenshot-crypto-pool.png)
 
 <br/>
 
