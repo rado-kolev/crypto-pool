@@ -9,21 +9,23 @@ const Account = () => {
   const handleSignOut = async () => {
     try {
       await logout();
-      navigate('/')
+      navigate('/');
     } catch (e) {
-      console.log(e.message)
+      console.log(e.message);
     }
-  }
+  };
 
   if (user) {
     return (
       <div className='max-w-[1140px] mx-auto'>
         <div className='flex justify-between items-center my-12 py-8 rounded-div'>
           <div>
-            <h1 className='text-2xl font-bold'>Account</h1>
-            <div>
-              <p>Welcome to your account!</p>
-            </div>
+            <h1 className='text-2xl font-bold mb-4'>
+              Welcome to your <span className='text-accent'>Account</span>!
+            </h1>
+            {/* <div>
+              <p>Your favourite coins will appear below.</p>
+            </div> */}
           </div>
           <div>
             <button
@@ -43,7 +45,7 @@ const Account = () => {
       </div>
     );
   } else {
-    return <Navigate to='/signin' />
+    return <Navigate to='/signin' />;
   }
 };
 

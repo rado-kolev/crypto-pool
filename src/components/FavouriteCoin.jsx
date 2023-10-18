@@ -33,7 +33,7 @@ const FavouriteCoin = () => {
         <p>
           You don&apos;t have any saved coins. Please save a coin to add it to
           your favourite coins list.{' '}
-          <Link to='/' className='text-accent font-bold'>
+          <Link to='/' className='text-accent font-bold hover:underline'>
             Click here to search coins.
           </Link>
         </p>
